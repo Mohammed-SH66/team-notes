@@ -12,7 +12,7 @@ theta1_list = linspace(0 , pi/2 , nSteps);        % Joint 1 motion (Z rotation)
 theta2_list = linspace(0 , pi/3 , nSteps);        % Joint 2 motion (Y rotation)
 
 P_traj  = zeros(3 , nSteps);   % End-effector positions
-O_traj  = zeros(3 , nSteps);   % End-effector orientations [Yaw Pitch Roll]
+O_traj  = zeros(3 , nSteps);   % End-effector orientations [Roll Pitch Yaw]
 
 %% --- COMPUTE TRAJECTORY USING DKM + Position_and_orientation ---
 for k = 1:nSteps
